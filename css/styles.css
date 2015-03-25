@@ -1,0 +1,52 @@
+		.visibleElement{
+			position: relative;
+			width: 30%;
+			background-color: #fff;
+		}
+		.menu {
+			width: 150px;
+			
+			margin: 0px;
+		
+		}
+		.submenu ul{
+			position: absolute;
+			margin-left: 150px;
+			margin-top: -20px;
+			
+			display: none;
+
+		}
+		
+	
+  		.context-menu {
+  			position: absolute;
+  			display: none;
+  			padding: 0px;
+  			list-style: none;
+  			background-color: #9ACD32;
+  			border: 1px solid orange;
+
+			
+  		}
+  		.context-menu li {
+  			cursor: pointer;
+  				
+
+  		}
+  		
+  		img {
+  			width: 100%;
+  			border: 5px solid orange;
+
+  		}
+		
+		.visibleElementRight {
+			float: right;
+			width: 40%;
+		}
+		
+		.visibleElementLeft {
+			float: left;
+			width: 40%;
+		}

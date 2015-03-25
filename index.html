@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><Document></Document></title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<script src="script.js"></script>
+	</head>
+<body>
+	<div class='visibleElementLeft'> 
+	   <img src="images/camomile.png">
+	
+	  
+	</div>
+	<div class='visibleElementRight'>
+		 <img src="images/gerbera.png">
+	</div>
+	<script>
+    (function () {
+    
+    var menuExampleLeft = [{
+			title: 'Цвет',
+			action: function () {console.log('Белая с желтой серединкой')}
+		},{
+			title: 'Высота стебеля',
+			action: function () {console.log('Не больше 2х аршинов')}
+		},{
+			title: 'Лечебные свойства',
+			submenu: [{
+				title: 'удаляет скуку',
+				action: function () {console.log('сбор трав в поле')}
+			}, {
+				title: 'снимает ответсвенность в принятии решения',
+				submenu:[{
+						title: 'решение 1 ',
+						action: function () {console.log('быть или не быть')}
+					}, {
+						title: 'решение 2',
+						action: function () {console.log('любит не любит')}
+					}]
+			}]
+		} ];
+
+
+		 var menuExampleRight = [{
+			title: 'Разцветка',
+			action: function () {console.log('терракотовая')}
+		},{
+			title: 'Высота Цветка',
+			action: function () {console.log('не больше 20 дюймов')}
+		},{
+			title: 'Лечебные свойства',
+			submenu: [{
+				title: 'В хим состав входит кумарин',
+				action: function () {console.log('в роли антикоагулянтов')}
+			}, {
+				title: 'Улучшает климат в доме',
+				action: function () {console.log('на 8 марта')}
+			}]
+		} ];
+
+      
+		window.cm1 = new ContextMenu(document.querySelector('.visibleElementLeft'), menuExampleLeft) ;
+		 
+		window.cm2 = new ContextMenu(document.querySelector('.visibleElementRight'), menuExampleRight) ; 
+		
+
+    } ())
+
+
+	</script>
+</body>
+</html>
